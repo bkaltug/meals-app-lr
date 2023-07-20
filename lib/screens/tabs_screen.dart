@@ -1,19 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:meals_app_5/screens/meals_screen.dart';
-import 'package:meals_app_5/widgets/main_drawer.dart';
+import '../screens/meals_screen.dart';
+import '../widgets/main_drawer.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../providers/favorite_meals_provider.dart';
 import 'categories_screen.dart';
 import 'filters_screen.dart';
 import '../providers/filter_provider.dart';
-
-Map<Filter, bool> kInitialFilters = {
-  Filter.glutenFree: false,
-  Filter.lactoseFree: false,
-  Filter.vegetarian: false,
-  Filter.vegan: false
-};
 
 class TabsScreen extends ConsumerStatefulWidget {
   const TabsScreen({super.key});
